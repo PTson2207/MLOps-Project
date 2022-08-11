@@ -1,0 +1,13 @@
+# Data
+logs/
+stores/
+data/
+
+# Packaging
+env-mlops-project/
+*.egg-info/
+__pycache__/
+
+# Misc
+.DS_Store
+.vscode

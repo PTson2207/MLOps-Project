@@ -1,0 +1,4 @@
+artifact_location: file:///d:\MLOps-Project\notebooks\experiments/0
+experiment_id: '0'
+lifecycle_stage: active
+name: baselines

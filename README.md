@@ -28,3 +28,9 @@ uvicorn app.api:app \       # location of app (`app` directory > `api.py` script
 gunicorn -c config/gunicorn.py -k uvicorn.workers.UvicornWorker app.api:app
 
 ```
+
+### How to run DVC
+```bash
+dvc init
+dvc remote storage add -d stores/blob # create folder blob in stores: where dvc storage
+```

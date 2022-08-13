@@ -1,9 +1,10 @@
-numpy==1.19.5 
-pandas==1.3.5 
-ipywidgets==7.7.0 
-matplotlib==3.5.2 
-seaborn==0.11.2 
-wordcloud==1.8.1 
+Cython
+numpy==1.19.5
+pandas==1.3.5
+ipywidgets==7.7.0
+matplotlib==3.5.2
+seaborn==0.11.2
+wordcloud==1.8.1
 scikit-learn==0.24.2
 pretty-errors==1.2.19
 protobuf==3.20.*
@@ -14,3 +15,5 @@ rich==12.4.4
 typer==0.4.1
 fastapi==0.78.0
 uvicorn==0.17.6
+dvc==2.10.2
+streamlit==1.10.0

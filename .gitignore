@@ -1,7 +1,6 @@
 # Data
 logs/
 stores/
-data/
 
 # Packaging
 env-mlops-project/
@@ -11,3 +10,4 @@ __pycache__/
 # Misc
 .DS_Store
 .vscode
+.pre-commit-config.yaml

@@ -1,0 +1,34 @@
+name: testing
+
+#envent
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+    branches:
+      - main
+      - master
+
+#jobs
+jobs:
+  test-code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.7.13
+      - name: Caching
+        uses: actions/cache@v2
+        with:
+          path: $/{/{ env.pythonLocation /}/}
+          key: $/{/{ env.pythonLocation /}/}-$/{/{ hashFiles('setup.py') /}/}-$/{/{ hashFiles('requirements.txt') /}/}
+      - name: Install dependencies
+        run: |
+          python3 -m pip install -e ".[test]" --no-cache-dir
+      - name: Execute tests
+        run: pytest tests/tagifai --ignore tests/code/test_main.py --ignore tests/code/test_data.py

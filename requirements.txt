@@ -18,3 +18,4 @@ uvicorn==0.17.6
 dvc==2.10.2
 streamlit==1.10.0
 pytest
+feast
